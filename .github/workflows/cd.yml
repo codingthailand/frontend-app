@@ -33,15 +33,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Download dist folder artifact
-        uses: actions/download-artifact@v7
-        with:
-          name: dist-production
-          path: dist
+      # - name: Download dist folder artifact
+      #   uses: actions/download-artifact@v7
+      #   with:
+      #     name: dist-production
+      #     path: dist
       
-      - run: ls dist
+      # - run: ls dist
       
-      - uses: actions/checkout@v6
+      # - uses: actions/checkout@v6
 
       - name: Deploy to GitHub Page
         uses: SerhiiKa/VuePagesAction@1.0.4
