@@ -41,7 +41,7 @@ jobs:
       
       # - run: ls dist
       
-      # - uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
       - name: Deploy to GitHub Page
         uses: SerhiiKa/VuePagesAction@1.0.4
